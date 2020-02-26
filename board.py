@@ -94,11 +94,12 @@ def docxml(labels=[[26, 91, 447, 566, 'board'], [7, 125, 52, 170, 'ra']],name='c
 import os
 if __name__ == '__main__':
     win=init()
-#     os.makedirs('file/JPEGImages')
-#     os.makedirs('file/xml')
+    if True:
+        os.makedirs('file/JPEGImages')
+        os.makedirs('file/xml')
     for i in range(400,500):
         docxml(gen(win),'chess_'+str(i))
-        pg.image.save(win,'file/image/chess_'+str(i)+'.jpg')
+        pg.image.save(win,'file/JPEGImages/chess_'+str(i)+'.jpg')
     pg.display.quit()
 
 
