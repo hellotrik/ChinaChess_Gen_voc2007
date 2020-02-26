@@ -50,7 +50,7 @@ def docxml(labels=[[26, 91, 447, 566, 'board'], [7, 125, 52, 170, 'ra']],name='c
     order.appendChild(filenam)
     order.appendChild(folder)
     
-    obj1=['object','bndbox','xmin','xmax','ymin','ymax','difficult','pose','name','truncated']
+    obj1=['object','bndbox','xmin','ymin','xmax','ymax','difficult','pose','name','truncated']
     def obj(lb):
         obj=[doc.createElement(x) for x in obj1]
         obj[0].appendChild(obj[1])
